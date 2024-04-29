@@ -5,7 +5,7 @@ from: mambaorg/micromamba
     export SINGULARITY_SHELL=/bin/bash
 
 %files
-    meerpower /opt/meerpower
+    meerpower-uksrc /opt/meerpower
     micromamba.sh /etc/profile.d/micromamba.sh
 
 %post
