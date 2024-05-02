@@ -9,7 +9,7 @@ from: mambaorg/micromamba
 
 %files
     meerpower-uksrc /opt/meerpower
-    micromamba.sh /etc/profile.d/micromamba.sh
+    azimuth-im/micromamba.sh /etc/profile.d/micromamba.sh
 
 %post
     env_yaml="/opt/meerpower/environment_gridimp.yml"
