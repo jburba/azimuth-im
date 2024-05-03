@@ -28,5 +28,5 @@ from: mambaorg/micromamba
     echo "Test output" >> output/test.txt
     CLA="--meerpower-path $MEERPOWER_DIR $@"
     echo "Executing command:"
-    echo "python $SCRIPT $CLA"
-    python $SCRIPT $CLA
+    echo "python $MEERPOWER_SCRIPT $CLA"
+    python $MEERPOWER_SCRIPT $CLA
