@@ -19,14 +19,13 @@ from: mambaorg/micromamba
     echo "micromamba activate $(head -n 1 $env_yaml | cut -f 2 -d ' ')" >> /etc/bash.bashrc
 
 %runscript
-    echo "Shell: $SHELL"
-    echo "python: $(which python)"
+    PYTHON="/opt/conda/envs/gridimp/bin/python"
+    echo "python: $PYTHON"
 
     echo "Making local output directory $(pwd)/output"
     mkdir -p output
     echo "Files in $DATA_DIR: $(ls -1 $DATA_DIR | wc -l)"
-    echo "Test output" >> output/test.txt
     CLA="--meerpower-path $MEERPOWER_DIR $@"
     echo "Executing command:"
-    echo "python $MEERPOWER_SCRIPT $CLA"
-    python $MEERPOWER_SCRIPT $CLA
+    echo "$PYTHON $MEERPOWER_SCRIPT $CLA"
+    $PYTHON $MEERPOWER_SCRIPT $CLA
