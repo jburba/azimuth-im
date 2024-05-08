@@ -6,9 +6,9 @@ survey: '2021'
 filepath_HI: /data/Nscan961_Tsky_cube_p0.3d_sigma4.0_iter2.fits
 gal_cat: gama
 filepath_g: /data/G23TilingCatv11.fits
-Nmock: 500
+Nmock: 200
 mockfilepath_HI: /data/dT_HI_p0.3d_wBeam
 mockfilepath_g: /data/mockGAMAcat
 N_fg: 10
-tukey_alphas: [0.1]
+tukey_alphas: [0.5]
 out_dir: ./output/
