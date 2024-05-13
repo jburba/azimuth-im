@@ -10,5 +10,5 @@ Nmock: 500
 mockfilepath_HI: /data/dT_HI_p0.3d_wBeam
 mockfilepath_g: /data/mockGAMAcat
 N_fg: 10
-tukey_alphas: [0.5]
+tukey_alphas: [0.8]
 out_dir: ./output/
