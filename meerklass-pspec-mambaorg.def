@@ -4,7 +4,7 @@ from: mambaorg/micromamba
 %environment
     export SINGULARITY_SHELL=/bin/bash
     export MEERPOWER_DIR="/opt/meerpower"
-    export MEERPOWER_SCRIPT=$MEERPOWER_DIR"/allLband/galaxy_cross.py"
+    export MEERPOWER_SCRIPT=$MEERPOWER_DIR"/allLband/galaxy_cross_mod.py"
     export DATA_DIR="/data/"
 
 %files
